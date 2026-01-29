@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Obiekty AR</title>
+
+<style>
+  body {
+    margin: 0;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    gap: 48px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    opacity: 0.85;
+    transition: opacity 0.3s;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 65px;
+  }
+
+  .label {
+    margin-top: 14px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+
+    <a rel="ar" href="kula.usdz">
+      <img src="kula.jpg" alt="">
+      <div class="label">KULA</div>
+    </a>
+
+    <a rel="ar" href="taniec.usdz">
+      <img src="taniec.jpg" alt="">
+      <div class="label">TANIEC</div>
+    </a>
+
+    <a rel="ar" href="woda.usdz">
+      <img src="woda.jpg" alt="">
+      <div class="label">WODA</div>
+    </a>
+
+  </div>
+</body>
+</html>
